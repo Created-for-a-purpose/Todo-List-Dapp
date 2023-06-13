@@ -33,9 +33,9 @@ contract Todo {
    function createTask(string memory _desc) public {
         
          tasks[taskCount]=Task(taskCount, _desc, false); 
-        //  unchecked{
+         unchecked{
           taskCount++;
-        // }
+        }
    }
 
 
